@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://aosp.tuna.tsinghua.edu.cn" />
+           fetch="git://mirrors.ustc.edu.cn/aosp" />
   <remote  name="github_modify"
            fetch="https://github.com/crazyzhangcrazy" />
 
