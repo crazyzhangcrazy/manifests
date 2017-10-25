@@ -2,12 +2,15 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://aosp.tuna.tsinghua.edu.cn" />
+  <remote  name="github_modify"
+           fetch="https://github.com/crazyzhangcrazy" />
+
   <default revision="refs/tags/android-5.1.1_r38"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk,tradefed" >
+  <project path="build" name="build" remote="github_modify" revision="modifyfrom_android-cts-5.1_r38" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
